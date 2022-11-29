@@ -1,8 +1,9 @@
 # LAMPP Ubuntu
 
 ## Install Apache
+```
 sudo apt install apache2
-
+```
 ### Check Apache version using the below command:
 sudo apachectl -v
 
