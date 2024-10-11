@@ -84,6 +84,19 @@ sudo a2enconf phpmyadmin.conf
 sudo service apache2 restart
 ```
 
+### Add user PhpMyAdmin:
+```
+sudo mysql -u root -p
+```
+```
+CREATE USER newuser@localhost IDENTIFIED BY 'mystrongpassword';
+GRANT ALL PRIVILEGES ON *.* TO newuser@localhost;
+FLUSH PRIVILEGES;
+```
+```
+SHOW GRANTS FOR newuser@localhost;
+```
+
 ## User and Folders Permissions
 
 ### Add user to www-data group
